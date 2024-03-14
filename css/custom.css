@@ -1,0 +1,133 @@
+body, html {
+}
+
+
+body {
+height: 100%;
+width: auto;
+align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-image: url('/images/driving.gif');
+background-size: 2000px;
+background-repeat: repeat-y;
+background-position: center;
+overflow: scroll;
+background-blend-mode: multiply;
+background-color: #FCC000;
+}
+
+.content-container {
+backdrop-filter: blur(10px);
+border: 5px dashed #ffffff;
+border-radius: 20px;
+padding: 20px;
+margin: 10px;
+width: 300px;
+height: auto;
+color: #ffffff;
+transition: 1s;
+}
+
+.content-container:hover {
+border: 5px solid #ffffff;
+padding: 10px;
+}
+
+h1 {
+font-family: 'designer';
+font-size: 25px;
+line-height: 25px;
+letter-spacing: 1px;
+color: #ffffff;
+}
+
+h3 {
+font-family: 'designer';
+text-decoration: underline;
+text-decoration-color: #ffffff;
+font-size: 25px;
+line-height: 25px;
+letter-spacing: 1px;
+color: #ffffff;
+}
+
+h2 {
+font-family: 'type';
+font-size: 10px;
+}
+
+.hover-style {
+transition: 1s;
+}
+
+.content-container:hover .hover-style {
+color: #ff0000;
+}
+
+p {
+font-family: 'type';
+font-size: 14px;
+letter-spacing: 1px;
+text-align: left;
+}
+
+@font-face {
+font-family: 'designer';
+src: url('/fonts/designer.otf') format('opentype'),
+}
+
+@font-face {
+font-family: 'type';
+src: url('/fonts/type.otf') format('opentype'),
+}
+
+.flex-border {
+border: 3px dashed white;
+border-radius: 20px;
+margin-top: 10px;
+padding: 15px;
+transition: 1s;
+}
+
+.flex-border:hover {
+border: 3px solid red;
+}
+
+.drop-down {
+display: none;
+}
+    
+button {
+background-color: transparent;
+color: #ffffff;
+font-family: 'type', sans-serif;
+text-align: left;
+cursor: pointer;
+border: 0px solid white;
+transition: color 1s;
+font-size: 14px;
+letter-spacing: 1px;
+}
+
+.flex-border:hover button {
+color: #ff0000;
+}
+
+@media only screen and (max-height: 900px) {
+body {
+margin-top: 50%;
+}
+a:link { 
+  text-decoration: none; 
+} 
+a:visited { 
+  text-decoration: none; 
+} 
+a:hover { 
+  text-decoration: none; 
+} 
+a:active { 
+  text-decoration: none; 
+}
